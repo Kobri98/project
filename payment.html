@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOB's LULU CLOTHING - Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>KOB's LULU CLOTHING</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="payment.html">Payment</a></li>
+        </ul>
+    </nav>
+
+    <!-- Payment Section -->
+    <section class="payment">
+        <h2>Payment Information</h2>
+
+        <div class="payment-summary">
+            <h3>Your Cart Summary:</h3>
+            <ul id="cart-summary">
+                <!-- Cart items will be displayed here dynamically -->
+            </ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+        </div>
+
+        <form id="payment-form">
+            <h3>Payment Details:</h3>
+            <label for="name">Cardholder Name:</label>
+            <input type="text" id="name" name="name" placeholder="Cardholder Name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+
+            <label for="expiry">Expiration Date:</label>
+            <input type="month" id="expiry" name="expiry" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+
+            <button type="submit" class="btn">Confirm Payment</button>
+        </form>
+
+        <div id="payment-confirmation" style="display: none;">
+            <h3>Payment Successful!</h3>
+            <p>Thank you for your purchase! Your order has been confirmed.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KOB's LULU CLOTHING. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>
